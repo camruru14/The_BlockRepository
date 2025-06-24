@@ -1,5 +1,5 @@
 //Coloca tu endpoint de Retool API
-const API_URL = 'https://685ac7499f6ef9611157c107.mockapi.io/moduloapi/schema'; 
+const API_URL = 'https://685ac7499f6ef9611157c107.mockapi.io/moduloapi/productos'; 
 
 const container = document.getElementById('cards-container');
 
@@ -25,8 +25,8 @@ function CargarTarjetas(personas){
     personas.forEach(persona => {
         container.innerHTML += `
         <div class="card">
-        <img src="${persona.imagen}" alt="Foto de perfil">
-        <h2>${persona.nombre}</h2>
+        <img src="${persona.product}" alt="productos fotos">
+        <h2>${persona.nombreprod}</h2>
         <p>${persona.telefono}</p>
        </div> 
       `;

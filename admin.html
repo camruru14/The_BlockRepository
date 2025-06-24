@@ -1,0 +1,91 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administración de Personas</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Estilos específicos de admin -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div>
+      <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="img/The Block.PNG" alt="" width="200" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- ms-auto para alinear a la derecha -->
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Productos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <h2>
+        Compras
+      </h2>
+    </div>
+</div>
+        <!-- Guarda la URL de la imagen cuando se edita un registro (para no subirla de nuevo si no cambia) -->
+        <input type="hidden" id="imagen-url" />
+        <!-- Guarda el ID de la persona que se está editando (vacío en modo "agregar") -->
+        <input type="hidden" id="persona-id" />
+        <!-- Botón para cancelar la edición y resetear el formulario -->
+        <button type="button" id="btn-cancel" hidden>Cancelar</button>
+
+      <hr/>
+      <!-- Tabla de personas -->
+      <table>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="personas-tbody">
+          <!-- inyectado por script -->
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-primary" id="btn-submit">Comprar</button>
+      <div>
+        <button type="button" class="btn btn-warning" id="btn-submit">Agregar</button>
+      </div>
+    </main>
+  
+  <footer class="container">
+    <p>&copy; 2025 Instituto Técnico Ricaldone</p>
+  </footer>
+
+  <script src="javascript/admin.js"></script>
+ 
+</body>
+
+</html>
