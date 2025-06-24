@@ -1,0 +1,288 @@
+.logo {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+header {
+    background-color: black !important;
+}
+
+.navbar {
+    background-color: black !important;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+/* Offcanvas styles */
+.offcanvas {
+    background-color: black !important;
+    color: white;
+}
+
+.nav-link, .offcanvas-title {
+    color: white !important;
+}
+
+/* Card styles */
+.card {
+    width: 100%;
+    min-height: 250px;
+    background-color: #BDC2CF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card img {
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    margin-top: auto;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navbar items alignment */
+.navbar-nav {
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Container spacing */
+.container {
+    padding: 20px;
+}
+
+.dashboard-title {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333; 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+
+.bodys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../img/Captura de pantalla 2025-06-12 120018.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #BDC2CF; /* Color de respaldo */
+}
+
+
+.wrapper {
+    width: 420px;
+    background: gray;
+    color: #000000;
+    border-radius: 10px;
+    padding: 30px 40px;
+} 
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #BDC2CF;
+    margin: 30px 0;
+    border-radius: 24px;
+} 
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #ddd;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.4px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Título principal */
+h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Formulario */
+  .persona-form {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Contenedor de campos usando Flexbox */
+  .persona-form .flex {
+    display: flex; /* contenedor flex */
+    flex-wrap: wrap; /* permite salto de línea */
+    gap: 1rem; /* separación entre elementos */
+  }
+  
+  /* Cada etiqueta ocupa mínimo 200px y crece según espacio */
+  .persona-form .flex label {
+    flex-grow: 1; /* el elemento puede crecer para ocupar espacio disponible */
+    flex-shrink: 1; /* el elemento puede encogerse si no hay suficiente espacio */
+    flex-basis: 200px; /* tamaño inicial preferido del elemento (mínimo base) */
+  }
+  
+  /* Imágenes en la tabla */
+  table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Espaciado en botones de acción */
+  table button {
+    margin-right: 0.25rem;
+  } 
+
+  h1 {
+    text-align: center; /* centrar texto */
+    margin-bottom: 1.5rem; /* espacio abajo */
+  }
+  
+  /* Contenedor de tarjetas usando Flexbox */
+  .cards-grid {
+    display: flex; /* flexbox */
+    flex-wrap: wrap; /* permitir salto de línea si no hay suficiente espacio */
+    gap: 1.5rem; /* separación */
+    justify-content: center; /* centrar items */
+    margin: 0 auto; /* centrar contenedor */
+  }
+  
+  /* Estilo de cada tarjeta */
+  .card {
+    flex: 1 1 220px; /* crecimiento flexible */
+    max-width: 300px; /* ancho máximo */
+    border: 1px solid #ddd; /* borde claro */
+    border-radius: 8px; /* esquinas redondeadas */
+    padding: 1rem; /* espacio interno */
+    text-align: center; /* centrar texto */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    transition: transform 0.2s; /* animación suave */
+  }
+  
+  .card:hover {
+    transform: translateY(-4px); /* elevar al pasar */
+  }
+  
+  .card img {
+    width: 100%; /* ancho completo */
+    height: 160px; /* altura fija */
+    object-fit: cover; /* recortar proporción */
+    border-radius: 4px; /* esquinas pequeñas */
+    margin-bottom: 0.75rem; /* espacio abajo */
+  }
+  
+  .card h2 {
+    font-size: 1.25rem; /* tamaño título */
+    margin: 0.5rem 0 0.25rem; /* márgenes verticales */
+  }
+  
+  .card p {
+    margin: 0.25rem 0; /* márgenes verticales */
+    color: #555; /* texto atenuado */
+    font-size: 0.95rem; /* tamaño cuerpo */
+  }
